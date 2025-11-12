@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.png" alt="quiz logo" class="logo">
+        <h1>Online Quiz System</h1>
+    </header>
+
+    <main>
+        <div class="card" id="welcome-card">
+            <h2>Welcome to the Quiz!</h2>
+            <p>Test your knowledge by starting the quiz below.</p>
+            <button class="btn" onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <div class="card hidden" id="quiz-card">
+            <h2 id="quiz-title">Quiz Title</h2>
+            <p id="question-text">Question text will appear here</p>
+
+            <div id="options-container">
+                <button class="option" onclick="selectOption(this)"></button>
+                <button class="option" onclick="selectOption(this)"></button>
+                <button class="option" onclick="selectOption(this)"></button>
+                <button class="option" onclick="selectOption(this)"></button>
+            </div>
+
+            <button class="btn" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <div class="card hidden" id="result-card">
+            <h2>Quiz Completed!</h2>
+            <p id="score-text"></p>
+            <button class="btn" onclick="restartQuiz()">Restart</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

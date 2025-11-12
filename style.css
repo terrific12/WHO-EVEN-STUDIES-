@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(155, 211, 233);
+    margin: 0;
+    padding: 0;
+    text-align: centre;
+}
+
+header {
+    background: rgb(56, 191, 245);
+    box-shadow: 4px 20px 40px;
+    color: white;
+    padding: 1rem;
+}
+
+.site-header {
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    background: #ddd;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    size: 100px;
+    height: auto;
+    width: auto;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    background: rgb(183, 183, 214);
+    color: wheat;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.option {
+    border: 1px solid #ddd;
+    margin: 8px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.option:hover {
+    background: rgb(214, 214, 245);
+}
+
+.btn {
+    background: rgb(196, 196, 255);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: rgb(30, 30, 211);
+    border-radius: 20px;
+}
