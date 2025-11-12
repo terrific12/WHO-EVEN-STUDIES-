@@ -8,10 +8,14 @@
 </head>
 
 <body>
-
-    <header>
-        <img src="logo.png" alt="quiz logo" class="logo">
-        <h1>Online Quiz System</h1>
+    <nav>
+        <a href="#" id="adminLoginLink">Admin Login</a>
+    </nav>
+    <header class="site-header">
+        <div class="header-left">
+            <img src="logo.png" alt="Quiz Logo" class="logo">
+            <h1>Online Quiz System</h1>
+        </div>
     </header>
 
     <main>
@@ -41,6 +45,25 @@
             <button class="btn" onclick="restartQuiz()">Restart</button>
         </div>
     </main>
+
+    <div id="loginModel" class="model hidden">
+        <div class="card login-card">
+            <h2>Admin Login</h2>
+            <div class="form-row">
+                <label>Username</label>
+                <input type="text" id="adminUser">
+            </div>
+            <div class="form-row">
+                <label>Password</label>
+                <input type="password" id="adminPass">
+            </div>
+            <div class="controls">
+                <button class="btn" onclick="closeLogin()">Cancel</button>
+                <button class="btn primary" onclick="validateLogin()">Login</button>
+            </div>
+            <p id="loginError" class="muted"></p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
