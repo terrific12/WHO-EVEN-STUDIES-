@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz System - Admin Login</title>
+    <link rel="stylesheet" href="admin_style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.php">Back to Quiz</a>
+    </nav>
+
+    <header class="site-header">
+        <div class="header-left">
+            <img src="logo.png" alt="Quiz Logo" class="logo">
+        </div>
+    </header>
+
+    <main>
+        <div class="card" id="login-card">
+            <h2>Admin Login</h2>
+            <p>Please enter your administrator credentials to access the dashboard.</p>
+
+            <div class="form-row">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+            </div>
+
+            <div class="form-row">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+
+            <button class="btn primary" onclick="validateLogin()">Login</button>
+        </div>
+    </main>
+
+    <script src="js/admin-login.js"></script>
+</body>
+
+</html>
